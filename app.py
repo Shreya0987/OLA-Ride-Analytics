@@ -48,7 +48,7 @@ else:
     # Load Data
     @st.cache_data
     def load_data():
-        return pd.read_csv(r"C:\Users\Shreya Ghosal\Downloads\ola_cleaned.csv")
+        return pd.read_csv("ola_cleaned.csv")
 
     df = load_data()
 
@@ -85,3 +85,4 @@ else:
 
     st.subheader("📋 Filtered Data")
     st.dataframe(filtered_df, use_container_width=True)
+
